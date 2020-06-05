@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,i;
+    cin>>n;
+    long long int sum=0;
+    char a="Tetrahedron",b="Cube",c="Octahedron",d="Dodecahedron",e="Icosahedron";
+    for(i=0;i<n;i++)
+    {
+        char s;
+        cin>>s;
+        if(strcmp(s,a))
+            sum=sum+4;
+        else if(strcmp(s,b))
+            sum=sum+6;
+        else if(strcmp(s,c))
+            sum=sum+8;
+        else if(strcmp(s,d))
+            sum=sum+12;
+        else if(strcmp(s,e))
+            sum=sum+20;
+    }
+}
